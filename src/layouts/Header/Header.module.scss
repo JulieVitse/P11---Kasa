@@ -1,0 +1,27 @@
+@import '../../assets/styles/variables.scss';
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //margin-bottom: 20px;
+    padding: 20px;
+    .logo{
+        width: 145px;
+    }
+}
+
+.nav{
+    display: flex;
+    .navItem{
+        .navLink{
+            color: $primary-color;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 12px;
+        }
+    }
+}
