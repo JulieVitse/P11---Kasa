@@ -1,14 +1,18 @@
 import './App.scss'
 import Header from '../../layouts/Header/Header'
-import Home from '../Homepage/Homepage'
 import Footer from '../../layouts/Footer/Footer'
-import { BrowserRouter } from 'react-router-dom'
+import Home from '../Homepage/Homepage'
+import About from '../About/About'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
       <Footer />
     </BrowserRouter>
   )
