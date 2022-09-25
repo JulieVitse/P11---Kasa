@@ -1,0 +1,36 @@
+@import '../../assets/styles/variables.scss';
+
+.container{
+    overflow: auto;
+    .btn {
+        width: 100%;
+        border: none;
+        background: $primary-color;
+        color: white;
+        border-radius: 5px;
+        padding: .5rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        //margin-bottom: nth($margins, 2);
+    }
+    .textWrapper{
+        background: $light-color;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transform: translateY(-5px);
+        position: relative;
+        z-index: 0;
+        transition: all .5s ease;
+        .description{
+            color: $primary-color;
+            padding: nth($margins, 2);
+            line-height: 1.4;
+        }
+    }
+}

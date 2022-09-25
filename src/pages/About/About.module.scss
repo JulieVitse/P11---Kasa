@@ -1,3 +1,10 @@
+@import '../../assets/styles/variables.scss';
+
 .container{
     padding: 20px;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: nth($margins, 3);
+    }
 }
