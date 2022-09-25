@@ -1,19 +1,20 @@
 import './App.scss'
-import Header from '../../layouts/Header/Header'
-import Footer from '../../layouts/Footer/Footer'
+import Layout from '../../layouts/Layout/Layout'
 import Home from '../Homepage/Homepage'
 import About from '../About/About'
+import Error from '../Error/Error'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="*" element={<Error />} />
+        </Route>
       </Routes>
-      <Footer />
     </BrowserRouter>
   )
 }
