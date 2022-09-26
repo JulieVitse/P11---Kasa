@@ -6,6 +6,8 @@ import Logement from '../Logement/Logement'
 import Error from '../Error/Error'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
+let logements = require('../../datas/logements.json')
+
 function App() {
   return (
     <BrowserRouter>
@@ -13,7 +15,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="logement/:id" element={<Logement />} />
+          <Route path="logement/:id" element={<Logement logements={logements} />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

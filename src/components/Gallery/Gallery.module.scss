@@ -1,0 +1,34 @@
+@import '../../assets/styles/variables.scss';
+
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1 / .75;
+    .controls{
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: nth($margins, 2);
+        .btn{
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            .icon{
+                filter: drop-shadow(0 0 10px rgb(129, 129, 129));
+                width: 15px;
+            }
+        }
+    }
+    .picture{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: nth($radius, 1);
+    }
+}

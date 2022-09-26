@@ -7,7 +7,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding: 5rem;
-    margin-top: nth($margins, 4);
+    margin-top: auto;
     .logo {
         width: 45%;
         filter: saturate(0) brightness(2);
