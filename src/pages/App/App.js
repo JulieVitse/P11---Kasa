@@ -6,7 +6,7 @@ import Logement from '../Logement/Logement'
 import Error from '../Error/Error'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-let logements = require('../../datas/logements.json')
+const logements = require('../../datas/logements.json')
 
 function App() {
   return (

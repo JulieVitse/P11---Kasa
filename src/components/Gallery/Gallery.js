@@ -22,19 +22,16 @@ function Gallery({ pictures, title }){
     return (
       <div className={styles.wrapper}>
         <div className={styles.controls}>
-          {pictures.length > 1 ? (
+          {pictures.length > 1 &&
             <button className={styles.btn} onClick={() => prevPicture()}>
               <img src={iconPrev} alt="" className={styles.icon} />
             </button>
-          ) : null}
-          {/* <p>
-            {galleryIndex + 1}/{pictures.length}
-          </p> */}
-          {pictures.length > 1 ? (
+          }
+          {pictures.length > 1 &&
             <button className={styles.btn} onClick={() => nextPicture()}>
               <img src={iconNext} alt="" className={styles.icon} />
             </button>
-          ) : null}
+          }
         </div>
         <img
           src={pictures[galleryIndex]}
