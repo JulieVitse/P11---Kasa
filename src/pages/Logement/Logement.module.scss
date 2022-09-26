@@ -8,6 +8,9 @@
         font-weight: 500;
         margin: nth($margins, 2) 0;
     }
+    .title{
+        line-height: 1.5;
+    }
     .tags_wrapper{
         display: flex;
         gap: nth($margins, 2);

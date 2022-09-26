@@ -1,0 +1,10 @@
+@import '../../assets/styles/variables.scss';
+
+.wrapper {
+    margin: nth($margins, 4) 0;
+    display: flex;
+    gap: 7px;
+    .icon{
+        width: 25px;
+    }
+}

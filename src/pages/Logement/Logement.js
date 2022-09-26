@@ -1,5 +1,6 @@
 import Gallery from '../../components/Gallery/Gallery'
 import Tag from '../../components/Tag/Tag'
+import Rating from '../../components/Rating/Rating'
 import { useParams } from 'react-router-dom'
 import styles from './Logement.module.scss'
 
@@ -17,6 +18,9 @@ function Logement({ logements }) {
         {logement.tags.map((tag, index) => (
           <Tag key={index} tags={tag} />
         ))}
+      </div>
+      <div className="informations">
+          <Rating ratingValue={logement.rating} />
       </div>
     </section>
   )
