@@ -2,4 +2,14 @@
 
 .container {
     padding: 20px;
+    .title, 
+    .location{
+        color: $primary-color;
+        font-weight: 500;
+        margin: nth($margins, 2) 0;
+    }
+    .tags_wrapper{
+        display: flex;
+        gap: nth($margins, 2);
+    }
 }
