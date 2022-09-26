@@ -31,8 +31,8 @@ function About() {
     <div className={styles.container}>
       <Banner image={aboutBanner} />
       <div className={styles.wrapper}>
-        {aboutContent.map((about, index) => (
-          <Collapse key={index} aboutContent={about} />
+        {aboutContent.map((content, index) => (
+          <Collapse key={index} content={content} />
         ))}
       </div>
     </div>

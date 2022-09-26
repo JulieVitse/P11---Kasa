@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Thumbnail(props) {
   return (
     <Link
-      to=""
+      to={`/logement/${props.logement.id}`}
       className={styles.thumbLogement}
       style={{
         backgroundImage: `url(${props.logement.cover})`,

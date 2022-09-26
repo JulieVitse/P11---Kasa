@@ -15,6 +15,7 @@
 .nav{
     display: flex;
     .navItem{
+        transition: all .5s ease;
         .navLink{
             color: $primary-color;
             text-transform: uppercase;
@@ -22,6 +23,21 @@
             margin: 0 10px;
             text-decoration: none;
             font-size: 12px;
+            display: inline-block;
+            position: relative;
+           /*  &::after{
+                content: '';
+                height: 1px;
+                background: $primary-color;
+                width: 0%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transition: all .5s ease;
+            }
+            &:hover:after{
+                width: 100%;
+            } */
         }
     }
 }

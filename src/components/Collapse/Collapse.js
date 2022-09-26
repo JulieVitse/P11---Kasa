@@ -9,12 +9,12 @@ function Collapse(props) {
   return (
     <div className={styles.container}>
       <button className={styles.btn} onClick={() => setIsOpen(!isOpen)}>
-        {props.aboutContent.title}
-        {isOpen ? <img src={arrowDown} alt="" /> : <img src={arrowUp} alt="" />}
+        {props.content.title}
+        {isOpen ? <img src={arrowUp} alt="" /> : <img src={arrowDown} alt="" />}
       </button>
       {isOpen && (
         <div className={styles.textWrapper} isOpen={isOpen}>
-          <p className={styles.description}>{props.aboutContent.description}</p>
+          <p className={styles.description}>{props.content.description}</p>
         </div>
       )}
     </div>
