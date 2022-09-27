@@ -32,7 +32,7 @@ function About() {
       <Banner image={aboutBanner} />
       <div className={styles.wrapper}>
         {aboutContent.map((content, index) => (
-          <Collapse key={index} content={content} />
+          <Collapse key={index} content={content.description} title={content.title} />
         ))}
       </div>
     </div>

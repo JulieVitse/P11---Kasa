@@ -15,4 +15,29 @@
         display: flex;
         gap: nth($margins, 2);
     }
+    .informations{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .host{
+            display: flex;
+            align-items: center;
+            gap: nth($margins, 2);
+            .name{
+                color: $primary-color;
+                font-weight: 500;
+                text-align: right;
+                width: 100px;
+            }
+            .picture{
+                border-radius: nth($radius, 3);
+                width: 45px;
+            }
+        }
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: nth($margins, 3);
+    }
 }
