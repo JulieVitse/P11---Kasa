@@ -1,5 +1,5 @@
-import iconPrev from '../../assets/images/icon_prev.svg'
-import iconNext from '../../assets/images/icon_next.svg'
+import iconPrev from 'assets/images/icon_prev.svg'
+import iconNext from 'assets/images/icon_next.svg'
 import { useState } from 'react'
 import styles from './Gallery.module.scss'
 

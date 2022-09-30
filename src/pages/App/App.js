@@ -1,5 +1,5 @@
 import './App.scss'
-import Layout from '../../layouts/Layout/Layout'
+import Layout from 'layouts/Layout/Layout'
 import Home from '../Homepage/Homepage'
 import About from '../About/About'
 import Logement from '../Logement/Logement'

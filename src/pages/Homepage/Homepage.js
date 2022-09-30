@@ -1,7 +1,7 @@
 import Banner from 'components/Banner/Banner'
 import homeBanner from 'assets/images/home_image.png'
 import styles from './Homepage.module.scss'
-import Thumbnail from '../../components/Thumbnail/Thumbnail'
+import Thumbnail from 'components/Thumbnail/Thumbnail'
 
 let logements = require('../../datas/logements.json')
 

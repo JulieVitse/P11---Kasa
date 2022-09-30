@@ -1,5 +1,5 @@
-import starFilled from '../../assets/images/star_full.svg'
-import starEmpty from '../../assets/images/star_empty.svg'
+import starFilled from 'assets/images/star_full.svg'
+import starEmpty from 'assets/images/star_empty.svg'
 import styles from './Rating.module.scss'
 
 function Rating({ ratingValue }){
