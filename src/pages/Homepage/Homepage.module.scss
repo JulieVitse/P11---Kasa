@@ -6,6 +6,10 @@
     @include laptop{
         padding: 3rem;
     }
+    @include desktop-med{
+        max-width: 1440px;
+        margin: auto;
+    }
     .logementWrapper {
         display: grid;
         gap: 22px;
@@ -17,6 +21,10 @@
             background: $light-color;
             padding: nth($margins, 4);
             border-radius: nth($radius, 2);
+        }
+        @include desktop-med{
+            gap: 3rem;
+            padding: 3rem;
         }
     }
 }
