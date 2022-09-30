@@ -1,4 +1,5 @@
-@import '../../assets/styles/variables.scss';
+@import 'assets/styles/variables.scss';
+@import 'assets/styles/mixins.scss';
 
 footer{
     background: black;
@@ -9,12 +10,24 @@ footer{
     padding: 5rem;
     margin-top: auto;
     .logo {
-        width: 45%;
+        width: 150px;
         filter: saturate(0) brightness(2);
         margin-bottom: nth($margins, 3);
+        @include tablet {
+            width: 200px;
+        }
+        @include laptop{
+            width: 122px;
+        }
     }
     .copyrights{
         color: white;
         font-size: 12px;
+        @include tablet {
+            font-size: 1rem;
+        }
+        @include laptop{
+            font-size: 24px;
+        }
     }
 }

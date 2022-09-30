@@ -1,7 +1,22 @@
+@import 'assets/styles/variables.scss';
+@import 'assets/styles/mixins.scss';
+
 .container{
     padding: 20px;
+    @include laptop{
+        padding: 3rem;
+    }
     .logementWrapper {
         display: grid;
         gap: 22px;
+        @include tablet{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include laptop{
+            grid-template-columns: repeat(3, 1fr);
+            background: $light-color;
+            padding: nth($margins, 4);
+            border-radius: nth($radius, 2);
+        }
     }
 }

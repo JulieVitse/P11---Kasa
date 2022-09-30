@@ -4,3 +4,10 @@ $light-color: #F6F6F6;
 
 $margins: .5rem, 1rem, 1.5rem, 2rem;
 $radius: 10px, 25px, 50%;
+
+$breakpoints: (
+    tablet: 768px,
+    laptop: 1024px,
+    desktop-med: 1280px,
+    desktop-large: 1600px
+);
