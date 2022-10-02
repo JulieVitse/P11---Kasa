@@ -1,12 +1,15 @@
 import Banner from 'components/Banner/Banner'
-//import homeBanner from 'assets/images/home_image.png'
 import image from 'assets/images/home.png'
 import styles from './Homepage.module.scss'
 import Thumbnail from 'components/Thumbnail/Thumbnail'
+import { useEffect } from 'react'
 
 let logements = require('../../datas/logements.json')
 
 function Home() {
+  useEffect(() => {
+    document.title = `Kasa`
+  })
   const title = 'Chez vous, partout et ailleurs'
     return (
       <section className={styles.container}>

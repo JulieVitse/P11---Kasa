@@ -4,11 +4,16 @@ import Rating from 'components/Rating/Rating'
 import Collapse from 'components/Collapse/Collapse'
 import Error from 'pages/Error/Error'
 import { useParams } from 'react-router-dom'
+import { useEffect } from 'react'
 import styles from './Logement.module.scss'
 
 function Logement({ logements }) {
   const { id } = useParams()
   const logement = logements.find((logement) => logement.id === id)
+
+  useEffect(() => {
+    document.title = `Kasa - ${logement.title}`
+  })
 
   return logement ? (
     <main>
