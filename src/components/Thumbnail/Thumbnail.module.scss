@@ -11,10 +11,15 @@
     align-items: flex-end;
     background-position: center;
     background-size: cover;
+    transition: all .5s ease;
     @include laptop{
         aspect-ratio: 1 / 1;
         height: initial;
         width: initial;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0 0 40px rgba(133, 133, 133, 0.658);
+        }
     }
     .title{
         color: white;

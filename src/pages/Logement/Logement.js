@@ -14,23 +14,27 @@ function Logement({ logements }) {
     <main>
       <section className={styles.container}>
         <Gallery pictures={logement.pictures} title={logement.title} />
-        <h2 className={styles.title}>{logement.title}</h2>
-        <h3 className={styles.location}>{logement.location}</h3>
-        <div className={styles.tags_wrapper}>
-          {logement.tags.map((tag, index) => (
-            <Tag key={index} tags={tag} />
-          ))}
-        </div>
+        <div className={styles.content}>
+          <div className={styles.content_wrapper}>
+            <h2 className={styles.title}>{logement.title}</h2>
+            <h3 className={styles.location}>{logement.location}</h3>
+            <div className={styles.tags_wrapper}>
+              {logement.tags.map((tag, index) => (
+                <Tag key={index} tags={tag} />
+              ))}
+            </div>
+          </div>
 
-        <div className={styles.informations}>
-          <Rating ratingValue={logement.rating} />
-          <div className={styles.host}>
-            <p className={styles.name}>{logement.host.name}</p>
-            <img
-              src={logement.host.picture}
-              alt={logement.host.name}
-              className={styles.picture}
-            />
+          <div className={styles.informations}>
+            <Rating ratingValue={logement.rating} />
+            <div className={styles.host}>
+              <p className={styles.name}>{logement.host.name}</p>
+              <img
+                src={logement.host.picture}
+                alt={logement.host.name}
+                className={styles.picture}
+              />
+            </div>
           </div>
         </div>
 

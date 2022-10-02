@@ -1,7 +1,8 @@
-@import '../../assets/styles/variables.scss';
+@import 'assets/styles/variables.scss';
 
 .container{
-    overflow: auto;
+    display: flex;
+    flex-direction: column;
     .btn {
         width: 100%;
         border: none;
@@ -17,7 +18,6 @@
         position: relative;
         z-index: 1;
         cursor: pointer;
-        //margin-bottom: nth($margins, 2);
     }
     .textWrapper{
         background: $light-color;
@@ -28,6 +28,7 @@
         z-index: 0;
         max-height: 0;
         opacity: 0;
+        overflow: auto;
         transition: all .8s ease;
         .description{
             color: $primary-color;
@@ -36,7 +37,8 @@
         }
     }
     .isOpen{
-        max-height: 300px;
+        max-height: 180px;
+        height: 100%;
         opacity: 1;
     }
 

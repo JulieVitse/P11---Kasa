@@ -1,9 +1,14 @@
-@import '../../assets/styles/variables.scss';
+@import 'assets/styles/variables.scss';
+@import 'assets/styles/mixins.scss';
 
 .wrapper {
     margin: nth($margins, 4) 0;
     display: flex;
     gap: 7px;
+    @include laptop {
+        order: 1;
+        margin: 0;
+    }
     .icon{
         width: 25px;
     }
