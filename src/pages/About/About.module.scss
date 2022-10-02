@@ -1,10 +1,22 @@
-@import '../../assets/styles/variables.scss';
+@import 'assets/styles/variables.scss';
+@import 'assets/styles/mixins.scss';
 
 .container{
     padding: 20px;
-    .wrapper{
-        display: flex;
-        flex-direction: column;
-        gap: nth($margins, 3);
+    @include laptop {
+        padding: 3rem;
     }
+    @include desktop-med {
+         max-width: 1440px;
+        margin: auto;
+    }
+    .wrapper{
+        display: grid;
+        gap: nth($margins, 3);
+        @include laptop{
+           width: 80%;
+           margin: auto;
+        }
+    }
+    
 }
