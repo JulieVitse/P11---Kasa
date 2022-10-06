@@ -12,7 +12,9 @@ function Logement({ logements }) {
   const logement = logements.find((logement) => logement.id === id)
 
   useEffect(() => {
-    document.title = `Kasa - ${logement.title}`
+    if (logement) {
+      document.title = `Kasa - ${logement.title}`
+    }
   })
 
   return logement ? (
