@@ -4,11 +4,10 @@
 .container{
     padding: 20px;
     @include laptop {
-        padding: 3rem;
+        padding: 1rem 3rem;
     }
     @include desktop-med {
         max-width: 1440px;
-        margin: auto;
     }
     .wrapper{
         display: grid;

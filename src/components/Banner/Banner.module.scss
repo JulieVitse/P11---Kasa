@@ -12,6 +12,9 @@
         justify-content: center;
         height: 150px;
     }
+    @include laptop {
+        height: 223px;
+    }
     .bannerImage{
         width: 100%;
         height: 100%;
