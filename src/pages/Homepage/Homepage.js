@@ -8,19 +8,20 @@ let logements = require('../../datas/logements.json')
 
 function Home() {
   useEffect(() => {
+    console.log('bbb')
     document.title = `Kasa`
   })
   const title = 'Chez vous, partout et ailleurs'
-    return (
-      <section className={styles.container}>
-            <Banner image={image} title={title} />
-            <div className={styles.logementWrapper}>
-                {logements.map((logement) => (
-                    <Thumbnail key={logement.id} logement={logement} />
-                ))}
-            </div>
-      </section>
-    )
+  return (
+    <section className={styles.container}>
+      <Banner image={image} title={title} />
+      <div className={styles.logementWrapper}>
+        {logements.map((logement) => (
+          <Thumbnail key={logement.id} logement={logement} />
+        ))}
+      </div>
+    </section>
+  )
 }
 
-export default Home 
+export default Home
